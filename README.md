@@ -9,3 +9,9 @@ This project implements a simple simulation of a rice cooker using Python.
 * Add water and rice to the cooker.
 * Start cooking and monitor progress.
 * Receive notifications when cooking is complete or rice is overcooked.
+
+## C++
+
+g++ riceCooker.cpp main.cpp
+
+execute ./a.out
