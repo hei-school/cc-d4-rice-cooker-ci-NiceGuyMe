@@ -14,6 +14,8 @@ This project implements a simple simulation of a rice cooker using Python.
 
 npm install
 
+cd src/
+
 tsc Main.ts
 
 node Main.js
