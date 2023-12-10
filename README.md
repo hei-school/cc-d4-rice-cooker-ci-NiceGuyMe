@@ -6,9 +6,9 @@ This project implements a simple simulation of a rice cooker using Python.
 
 ### Features:
 
-* Add water and rice to the cooker.
-* Start cooking and monitor progress.
-* Receive notifications when cooking is complete or rice is overcooked.
+- Add water and rice to the cooker.
+- Start cooking and monitor progress.
+- Receive notifications when cooking is complete or rice is overcooked.
 
 # Typescript
 
@@ -19,3 +19,13 @@ cd src/
 tsc Main.ts
 
 node Main.js
+
+# code style : prettier
+
+to check all format files
+
+- npx prettier . --check
+
+to format all files
+
+- npx prettier . --write

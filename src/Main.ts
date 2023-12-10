@@ -1,5 +1,5 @@
 import { RiceCooker, RiceCookerState } from "./RiceCooker";
-let prompt = require('prompt-sync')();
+let prompt = require("prompt-sync")();
 
 function runRiceCookerSimulation() {
   const riceCooker = new RiceCooker();
@@ -22,13 +22,13 @@ function runRiceCookerSimulation() {
     switch (choice) {
       case 1:
         const waterAmount = parseInt(
-          prompt("Enter water amount (cups): ") || "0"
+          prompt("Enter water amount (cups): ") || "0",
         );
         riceCooker.addWater(waterAmount);
         break;
       case 2:
         const riceAmount = parseInt(
-          prompt("Enter rice amount (cups): ") || "0"
+          prompt("Enter rice amount (cups): ") || "0",
         );
         riceCooker.addRice(riceAmount);
         break;

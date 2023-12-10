@@ -16,14 +16,14 @@ export class RiceCooker {
   addWater(amount: number): void {
     this.state.waterLevel += amount;
     console.log(
-      `Added ${amount} cup(s) of water. Current water level: ${this.state.waterLevel} cups.`
+      `Added ${amount} cup(s) of water. Current water level: ${this.state.waterLevel} cups.`,
     );
   }
 
   addRice(amount: number): void {
     this.state.riceAmount += amount;
     console.log(
-      `Added ${amount} cup(s) of rice. Current rice amount: ${this.state.riceAmount} cups.`
+      `Added ${amount} cup(s) of rice. Current rice amount: ${this.state.riceAmount} cups.`,
     );
   }
 
