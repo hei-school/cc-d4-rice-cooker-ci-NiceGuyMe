@@ -1,11 +1,13 @@
-import { RiceCooker, RiceCookerState } from "./RiceCooker";
-let prompt = require("prompt-sync")();
+import { RiceCooker } from "./RiceCooker";
+import * as readline from 'readline-sync';
+
 
 function runRiceCookerSimulation() {
+
   const riceCooker = new RiceCooker();
 
   let running = true;
-  let choice: number;
+  let choice: string;
 
   while (running) {
     // Display menu options
@@ -17,28 +19,28 @@ function runRiceCookerSimulation() {
     console.log("5. Exit");
 
     // Get user input
-    choice = parseInt(prompt("Enter your choice: ") || "0");
+    choice = readline.question("Enter your choice: ");
 
     switch (choice) {
-      case 1:
-        const waterAmount = parseInt(
-          prompt("Enter water amount (cups): ") || "0",
+      case '1':
+       { const waterAmount = parseInt(
+        readline.question("Enter water amount (cups): "),
         );
-        riceCooker.addWater(waterAmount);
+        riceCooker.addWater(waterAmount);}
         break;
-      case 2:
-        const riceAmount = parseInt(
-          prompt("Enter rice amount (cups): ") || "0",
+      case '2':
+        {const riceAmount = parseInt(
+          readline.question("Enter rice amount (cups): "),
         );
-        riceCooker.addRice(riceAmount);
+        riceCooker.addRice(riceAmount);}
         break;
-      case 3:
+      case '3':
         riceCooker.startCooking();
         break;
-      case 4:
+      case '4':
         riceCooker.checkStatus();
         break;
-      case 5:
+      case '5':
         running = false;
         break;
       default:

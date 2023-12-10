@@ -29,3 +29,7 @@ to check all format files
 to format all files
 
 - npx prettier . --write
+
+# linter
+
+npx eslint Main.ts RiceCooker.ts
