@@ -1,4 +1,3 @@
-using System;
 class RiceCooker
 {
     private int waterLevel;
@@ -9,13 +8,15 @@ class RiceCooker
     public void AddWater(int amount)
     {
         waterLevel += amount;
-        Console.WriteLine($"Added {amount} cup(s) of water. Current water level: {waterLevel} cups.");
+        Console.WriteLine(
+            $"Added {amount} cup(s) of water. Current water level: {waterLevel} cups.");
     }
 
     public void AddRice(int amount)
     {
         riceAmount += amount;
-        Console.WriteLine($"Added {amount} cup(s) of rice. Current rice amount: {riceAmount} cups.");
+        Console.WriteLine(
+            $"Added {amount} cup(s) of rice. Current rice amount: {riceAmount} cups.");
     }
 
     public void StartCooking()
