@@ -9,3 +9,17 @@ This project implements a simple simulation of a rice cooker using Python.
 * Add water and rice to the cooker.
 * Start cooking and monitor progress.
 * Receive notifications when cooking is complete or rice is overcooked.
+
+# Requirements
+
+mono-project
+
+https://www.mono-project.com/download/stable/#download-lin-ubuntu
+
+# Run
+
+csc src/RiceCooker.cs src/RiceCookerSimulation.cs
+
+./RiceCookerSimulation.exe 
+
+
