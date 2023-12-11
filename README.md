@@ -6,12 +6,34 @@ This project implements a simple simulation of a rice cooker using Python.
 
 ### Features:
 
-* Add water and rice to the cooker.
-* Start cooking and monitor progress.
-* Receive notifications when cooking is complete or rice is overcooked.
+- Add water and rice to the cooker.
+- Start cooking and monitor progress.
+- Receive notifications when cooking is complete or rice is overcooked.
 
 ## C++
 
 g++ riceCooker.cpp main.cpp
 
 execute ./a.out
+
+# Formatter
+
+ClangFormat
+
+https://clang.llvm.org/docs/ClangFormat.html
+
+sudo apt install clang-format
+
+clang-format -style=google -dump-config > .clang-format
+
+clang-format -i \*.cpp
+
+# Linter
+
+cpplint
+
+https://github.com/cpplint/cpplint
+
+check
+
+cpplint src/main.cpp src/RiceCooker.h src/riceKooker.cpp

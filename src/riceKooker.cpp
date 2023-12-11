@@ -1,18 +1,27 @@
-#include "RiceCooker.h"
+// Copyright 2023 NiceGuyMe
 #include <iostream>
 
-using namespace std;
+#include "RiceCooker.h"
 
-RiceCooker::RiceCooker() : waterLevel(0), riceAmount(0), isCooking(false), elapsedTime(0) {}
+using std::cout;
+using std::endl;
+using std::cin;
+
+RiceCooker::RiceCooker()
+    : waterLevel(0), riceAmount(0), isCooking(false), elapsedTime(0) {}
 
 void RiceCooker::addWater(int amount) {
   waterLevel += amount;
-  cout << "Added " << amount << " cup(s) of water. Current water level: " << waterLevel << " cups." << endl;
+  cout << "Added " << amount
+       << " cup(s) of water. Current water level: " << waterLevel << " cups."
+       << endl;
 }
 
 void RiceCooker::addRice(int amount) {
   riceAmount += amount;
-  cout << "Added " << amount << " cup(s) of rice. Current rice amount: " << riceAmount << " cups." << endl;
+  cout << "Added " << amount
+       << " cup(s) of rice. Current rice amount: " << riceAmount << " cups."
+       << endl;
 }
 
 void RiceCooker::startCooking() {
