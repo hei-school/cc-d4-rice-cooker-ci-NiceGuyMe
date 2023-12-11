@@ -6,11 +6,27 @@ This project implements a simple simulation of a rice cooker using Python.
 
 ### Features:
 
-* Add water and rice to the cooker.
-* Start cooking and monitor progress.
-* Receive notifications when cooking is complete or rice is overcooked.
+- Add water and rice to the cooker.
+- Start cooking and monitor progress.
+- Receive notifications when cooking is complete or rice is overcooked.
 
 # Java
 
 javac Main.java RiceCooker.java
 java Main
+
+# Formatter
+
+npm install
+
+Prettier Java
+
+https://github.com/jhipster/prettier-java?ref=blog.ippon.fr
+
+format
+
+npx prettier --write "**/*.java"
+
+chack
+
+npx prettier --check "**/*.java"
