@@ -17,16 +17,21 @@ java Main
 
 # Formatter
 
-npm install
+google-java-format
 
-Prettier Java
+https://github.com/google/google-java-format
 
-https://github.com/jhipster/prettier-java?ref=blog.ippon.fr
+format : 
 
-format
+java -jar google-java-format-1.18.1-all-deps.jar --replace src/Main.java src/RiceCooker.java
 
-npx prettier --write "**/*.java"
 
-chack
+# Linter
 
-npx prettier --check "**/*.java"
+CheckStyle
+
+https://checkstyle.sourceforge.io/
+
+check :
+
+java -jar checkstyle-10.12.6-all.jar -c google_checks.xml src/Main.java src/RiceCooker.java

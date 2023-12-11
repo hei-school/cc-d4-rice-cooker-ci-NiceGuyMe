@@ -1,5 +1,8 @@
 package src;
 
+/**
+ * The type Rice cooker.
+ */
 public class RiceCooker {
 
   private int waterLevel;
@@ -7,28 +10,31 @@ public class RiceCooker {
   private boolean cooking;
   private int elapsedTime;
 
+  /**
+   * Add water.
+   *
+   * @param amount the amount
+   */
   public void addWater(int amount) {
     waterLevel += amount;
     System.out.println(
-      "Added " +
-      amount +
-      " cup(s) of water. Current water level: " +
-      waterLevel +
-      " cups."
-    );
+        "Added " + amount + " cup(s) of water. Current water level: " + waterLevel + " cups.");
   }
 
+  /**
+   * Add rice.
+   *
+   * @param amount the amount
+   */
   public void addRice(int amount) {
     riceAmount += amount;
     System.out.println(
-      "Added " +
-      amount +
-      " cup(s) of rice. Current rice amount: " +
-      riceAmount +
-      " cups."
-    );
+        "Added " + amount + " cup(s) of rice. Current rice amount: " + riceAmount + " cups.");
   }
 
+  /**
+   * Start cooking.
+   */
   public void startCooking() {
     if (waterLevel < 1 || riceAmount < 1) {
       System.out.println("Please add water and rice before starting cooking.");
@@ -39,6 +45,9 @@ public class RiceCooker {
     }
   }
 
+  /**
+   * Check status.
+   */
   public void checkStatus() {
     if (cooking) {
       elapsedTime++;
