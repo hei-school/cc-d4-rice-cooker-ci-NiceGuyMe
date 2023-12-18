@@ -3,7 +3,7 @@
     <PropertyGroup>
       <OutputType>Exe</OutputType>
       <TargetFramework>net8.0</TargetFramework>
-      <RootNamespace>cc_d2_my_rice_cooker_NiceGuyMe.Tests</RootNamespace>
+      <RootNamespace>cc-d4-rice-cooker-ci-NiceGuyMe.test</RootNamespace>
       <IsTestProject>true</IsTestProject>
     </PropertyGroup>
   

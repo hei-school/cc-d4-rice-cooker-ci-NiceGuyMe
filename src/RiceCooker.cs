@@ -1,4 +1,4 @@
-class RiceCooker
+public class RiceCooker
 {
     private int waterLevel;
     private int riceAmount;
