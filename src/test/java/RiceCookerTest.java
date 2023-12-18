@@ -1,4 +1,6 @@
+import org.example.RiceCooker;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class RiceCookerTest {
@@ -55,3 +57,4 @@ public class RiceCookerTest {
         assertFalse(riceCooker.isCooking());
     }
 }
+
