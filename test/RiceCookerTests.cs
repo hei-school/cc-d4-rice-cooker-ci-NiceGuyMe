@@ -4,6 +4,8 @@ using System;
 [TestClass]
 public class RiceCookerTests
 {
+    public object? Assert { get; private set; }
+
     [TestMethod]
     public void AddWater_ShouldIncreaseWaterLevel()
     {
@@ -137,4 +139,12 @@ public class RiceCookerTests
             return sw.ToString().Trim();
         }
     }
+}
+
+internal class TestClassAttribute : Attribute
+{
+}
+
+internal class TestMethodAttribute : Attribute
+{
 }
